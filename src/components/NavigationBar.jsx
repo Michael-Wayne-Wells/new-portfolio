@@ -10,8 +10,18 @@ function NavigationBar() {
           font-family: "Ubuntu Mono", monospace;
           font-size: 50px;
         }
+
+        .transNav {
+          opacity: 0.8;
+        }
       `}</style>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar
+        collapseOnSelect
+        className="transNav"
+        expand="lg"
+        bg="dark"
+        variant="dark"
+      >
         <Navbar.Brand className="titleFont" href="/">
           Michael Wells
         </Navbar.Brand>

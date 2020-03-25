@@ -1,11 +1,13 @@
 import React from "react";
+
 import NavigationBar from "./NavigationBar";
 
 function Header() {
-  return <div className="header">
-
+  return (
+    <div className="header">
       <NavigationBar />
-  </div>;
+    </div>
+  );
 }
 
 export default Header;

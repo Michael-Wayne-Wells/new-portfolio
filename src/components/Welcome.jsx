@@ -1,24 +1,25 @@
 import React from "react";
-import Goo from "./Goo";
 import "../fonts.css";
 
 function Welcome() {
   return (
     <div className="welcome">
-      <Goo />
       <style jsx>{`
         .profileImg {
           width: 300px;
           height: auto;
         }
+        Goo {
+          position: absolute;
+        }
         .welcome {
-          width: 70%;
-          margin-left: 15%;
-          margin-right: 15%;
+          margin: 0 auto;
+          width: 400px;
         }
         .welcomeText {
           font-family: "Ubuntu Mono", monospace;
           font-size: 75px;
+          z-index: 2;
         }
       `}</style>
       <h1 className="welcomeText">Welcome!</h1>

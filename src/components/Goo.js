@@ -109,7 +109,7 @@ export default function Goo() {
             position: absolute;
             width: 100%;
             opacity: 0.7;
-            height: 400px;
+            height: 100%;
             filter: url("#goo");
             overflow: hidden;
           }
