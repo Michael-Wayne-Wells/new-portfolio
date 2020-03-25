@@ -1,11 +1,20 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import "../fonts.css";
 
 function NavigationBar() {
   return (
     <div>
+      <style jsx>{`
+        .titleFont {
+          font-family: "Ubuntu Mono", monospace;
+          font-size: 50px;
+        }
+      `}</style>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/">Michael Wells</Navbar.Brand>
+        <Navbar.Brand className="titleFont" href="/">
+          Michael Wells
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>

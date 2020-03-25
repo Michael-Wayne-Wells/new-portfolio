@@ -1,5 +1,7 @@
 import React from "react";
 import Goo from "./Goo";
+import "../fonts.css";
+
 function Welcome() {
   return (
     <div className="welcome">
@@ -8,10 +10,18 @@ function Welcome() {
         .profileImg {
           width: 300px;
           height: auto;
-          margin: 0 auto;
+        }
+        .welcome {
+          width: 70%;
+          margin-left: 15%;
+          margin-right: 15%;
+        }
+        .welcomeText {
+          font-family: "Ubuntu Mono", monospace;
+          font-size: 75px;
         }
       `}</style>
-      <h1>Welcome!</h1>
+      <h1 className="welcomeText">Welcome!</h1>
       <img
         className="profileImg"
         src="profile.png"
